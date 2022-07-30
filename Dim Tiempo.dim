@@ -1,0 +1,363 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="ea3d1427-6c1f-4a1f-92cc-a2e8371b40d5" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Tiempo</ID>
+  <Name>Dim Tiempo</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="cdd81225-7481-429e-80f7-f4bf0b6a9eb9">
+    <DataSourceViewID>Northwind MART</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="aba5ec1f-2648-4283-88eb-212b5d8c5bd7">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="fef86004-8d4f-49f1-8a51-c4fbf67bbc3f">
+      <ID>Tiempo Skey</ID>
+      <Name>Tiempo Skey</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="afe620e5-aa77-4aa1-855d-cf7d40da1d21">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="67ed48a7-64c4-4fa0-884f-887660b56768">
+            <TableID>dbo_Dim_Tiempo</TableID>
+            <ColumnID>Tiempo_Skey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="29586fde-1a20-4302-8afc-75d789b8877a">
+          <AttributeID>Tiempo Semana</AttributeID>
+          <Name>Tiempo Semana</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0c985ef7-45f3-439c-b571-c68b94b768c5">
+          <AttributeID>Tiempo Dia De Anio</AttributeID>
+          <Name>Tiempo Dia De Anio</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="07a8a9be-5a25-4c08-b78f-781e6b94b8a7">
+          <AttributeID>Tiempo Dia De Mes</AttributeID>
+          <Name>Tiempo Dia De Mes</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2617d9f7-de60-45dc-996c-f4526db08acf">
+          <AttributeID>Tiempo Dia De Semana</AttributeID>
+          <Name>Tiempo Dia De Semana</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a0e1324e-79e8-4f6c-bfa1-20616e3eea01">
+          <AttributeID>Tiempo Es Fin Semana</AttributeID>
+          <Name>Tiempo Es Fin Semana</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d43fc3f2-f17d-4c14-b566-3d31175b3ba6">
+          <AttributeID>Tiempo Es Feriado</AttributeID>
+          <Name>Tiempo Es Feriado</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0c19036e-087c-4a74-9f0d-def4648e6460">
+          <AttributeID>Tiempo Comentarios</AttributeID>
+          <Name>Tiempo Comentarios</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d2f8966e-1780-4c55-8352-456529d6d1d9">
+          <AttributeID>Tiempo Semana Calendario</AttributeID>
+          <Name>Tiempo Semana Calendario</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e55c8b8b-9170-4a5a-87a4-e7564819765d">
+          <AttributeID>Tiempo Semanas Del Anio Laborales</AttributeID>
+          <Name>Tiempo Semanas Del Anio Laborales</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4d208365-f343-4246-b7a9-456e6a4fd514">
+          <AttributeID>Tiempo Anio Bisiesto</AttributeID>
+          <Name>Tiempo Anio Bisiesto</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ea414346-2992-4738-9af0-8e1c2f9087df">
+          <AttributeID>Tiempo Descripcion Dia De Semana</AttributeID>
+          <Name>Tiempo Descripcion Dia De Semana</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="25194be9-ee0e-4a3c-97b0-936a84a08745">
+          <AttributeID>Tiempo Descripcion Mes</AttributeID>
+          <Name>Tiempo Descripcion Mes</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="55da950f-34e9-4dd4-8363-c39050e4e542">
+          <AttributeID>Tiempo Descripcion Trimestre</AttributeID>
+          <Name>Tiempo Descripcion Trimestre</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="37e7fff4-a6ad-465f-8d09-003c6b5ad4b2">
+          <AttributeID>Tiempo Descripcion Semestre</AttributeID>
+          <Name>Tiempo Descripcion Semestre</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3162296f-2ee9-4fac-a071-bb3d0adc6c89">
+      <ID>Tiempo Semana</ID>
+      <Name>Tiempo Semana</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4d12b1fa-c079-4ef4-9a09-28c45cf53b9b">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1a82a252-bedf-4813-9d26-149bca115f67">
+            <TableID>dbo_Dim_Tiempo</TableID>
+            <ColumnID>Tiempo_Semana</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="466b7a84-4c96-4292-b909-a4168ae77cac">
+      <ID>Tiempo Dia De Anio</ID>
+      <Name>Tiempo Dia De Anio</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="44b863e0-632e-4e03-9cc3-273358a02d57">
+          <DataType>WChar</DataType>
+          <DataSize>6</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0bc431a3-5fe7-4784-a862-8d7ccb88e29e">
+            <TableID>dbo_Dim_Tiempo</TableID>
+            <ColumnID>Tiempo_DiaDeAnio</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d83a2ffb-dcc0-47fc-852a-72cf606ede72">
+      <ID>Tiempo Dia De Mes</ID>
+      <Name>Tiempo Dia De Mes</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8fe606ba-8b78-451b-bb97-461b4614a5a2">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="370056db-7143-44ca-a89e-8f5f173fe8c7">
+            <TableID>dbo_Dim_Tiempo</TableID>
+            <ColumnID>Tiempo_DiaDeMes</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f02e6047-8370-4977-926a-e5ac5a750e47">
+      <ID>Tiempo Dia De Semana</ID>
+      <Name>Tiempo Dia De Semana</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fd14011d-9a53-46c7-b7e2-e4e9a9a838e1">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="af525a01-72ab-4183-b507-a43c20f62f57">
+            <TableID>dbo_Dim_Tiempo</TableID>
+            <ColumnID>Tiempo_DiaDeSemana</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="391f00f5-49b8-4bf9-9a02-3a3f7fbba00f">
+      <ID>Tiempo Es Fin Semana</ID>
+      <Name>Tiempo Es Fin Semana</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0c085e0c-fa04-463d-9eba-68a8c22fd740">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b6b626c2-777c-4896-b47d-2e14c3fad490">
+            <TableID>dbo_Dim_Tiempo</TableID>
+            <ColumnID>Tiempo_EsFinSemana</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="cefdbf9e-ad04-41d5-87ef-3e0141672eab">
+      <ID>Tiempo Es Feriado</ID>
+      <Name>Tiempo Es Feriado</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="96feaf82-5584-4a87-9463-e88d5d6e1eb5">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5dc94277-dfee-447a-9f8c-c4b3ee74c91b">
+            <TableID>dbo_Dim_Tiempo</TableID>
+            <ColumnID>Tiempo_EsFeriado</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="67b04d28-97a4-45d2-86fb-f71e6f12bca5">
+      <ID>Tiempo Comentarios</ID>
+      <Name>Tiempo Comentarios</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3347b7b1-c77f-4c02-9cbf-d48fd678af64">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="02096391-8f09-4930-b355-fa7b64246fc4">
+            <TableID>dbo_Dim_Tiempo</TableID>
+            <ColumnID>Tiempo_Comentarios</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ab22a4b2-e529-4b94-91d5-ae5a563f478c">
+      <ID>Tiempo Semana Calendario</ID>
+      <Name>Tiempo Semana Calendario</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="54bd8ffc-4482-47e9-aebd-220ed664077c">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="572cfd45-c93c-4a4b-a6d2-d3f776d6a4aa">
+            <TableID>dbo_Dim_Tiempo</TableID>
+            <ColumnID>Tiempo_SemanaCalendario</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="238ed0db-8617-4d25-acdb-95204941f167">
+      <ID>Tiempo Semanas Del Anio Laborales</ID>
+      <Name>Tiempo Semanas Del Anio Laborales</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3e970855-ebad-4730-ae5f-3305704b1b81">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ed7d8945-48cd-4cb6-93e2-6f6043983602">
+            <TableID>dbo_Dim_Tiempo</TableID>
+            <ColumnID>Tiempo_SemanasDelAnioLaborales</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a07e2565-f67c-4745-a297-7bbcf20a43c1">
+      <ID>Tiempo Anio Bisiesto</ID>
+      <Name>Tiempo Anio Bisiesto</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="44d0c2c0-b305-4126-b5a0-fc4e6f5351ab">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ef873b49-06db-4293-8c96-c09ee02b4304">
+            <TableID>dbo_Dim_Tiempo</TableID>
+            <ColumnID>Tiempo_AnioBisiesto</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7ada8a91-869f-4f50-8dca-60eb94e557a5">
+      <ID>Tiempo Descripcion Dia De Semana</ID>
+      <Name>Tiempo Descripcion Dia De Semana</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f9444c1b-3065-48a5-96e8-4818ca5908b6">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4451fcc2-efa4-430b-a64c-ef6c7c1c447a">
+            <TableID>dbo_Dim_Tiempo</TableID>
+            <ColumnID>Tiempo_Descripcion_DiaDeSemana</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f306ccfb-ba52-437e-8e72-83de932986ed">
+      <ID>Tiempo Descripcion Mes</ID>
+      <Name>Tiempo Descripcion Mes</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5235535c-efee-4873-8553-37ead0b496b6">
+          <DataType>WChar</DataType>
+          <DataSize>15</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b054111a-5d2a-4732-ad78-9146d43d15e6">
+            <TableID>dbo_Dim_Tiempo</TableID>
+            <ColumnID>Tiempo_Descripcion_Mes</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="dc42d272-8823-4d5a-983d-62f7e05c8aa8">
+      <ID>Tiempo Descripcion Trimestre</ID>
+      <Name>Tiempo Descripcion Trimestre</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a40f836e-5fa0-486d-a68e-4cf11a02c57b">
+          <DataType>WChar</DataType>
+          <DataSize>7</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3e8443bc-2285-48f4-8890-f016a009ce20">
+            <TableID>dbo_Dim_Tiempo</TableID>
+            <ColumnID>Tiempo_Descripcion_Trimestre</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="761b0c03-bd5e-4ab0-ace4-3edd9c6a4f2e">
+      <ID>Tiempo Descripcion Semestre</ID>
+      <Name>Tiempo Descripcion Semestre</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="29fada1a-76bc-4541-90ff-f482c32217aa">
+          <DataType>WChar</DataType>
+          <DataSize>15</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ee462b8a-b57b-46f4-9d8d-169c4437ec79">
+            <TableID>dbo_Dim_Tiempo</TableID>
+            <ColumnID>Tiempo_Descripcion_Semestre</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

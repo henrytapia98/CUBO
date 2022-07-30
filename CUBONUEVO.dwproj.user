@@ -1,0 +1,29 @@
+<AnalysisServicesUserConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <UserIDs>
+          <ConfigurationSetting>
+            <Id>Northwind MART</Id>
+            <Name>Northwind MART</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA9f2PLK+rxk24nklhJk+p0gAAAAAeAAAATgBvAHIAdABoAHcAaQBuAGQAIABNAEEAUgBUAAAAEGYAAAABAAAgAAAAL8FUyGmWGVMTA9g4foJj7PePR3LNiXEkWBijaodWWSwAAAAADoAAAAACAAAgAAAAqNMqn1tKHIhomKVvfNBAq/V7ZWSfNcbanpnUqHcnrB0QAAAADtxO+zxCNT1A6jFdZRF+SEAAAACqCk6UzQmw5iIbo4AXYx4F910X4Ox7/jFRfIeoKad7UzS+CAfXhs3By0JuKvSEEHNlDMThaKGPI5tM9ytpVObd</Value>
+          </ConfigurationSetting>
+        </UserIDs>
+        <UserPasswords>
+          <ConfigurationSetting>
+            <Id>Northwind MART</Id>
+            <Name>Northwind MART</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA9f2PLK+rxk24nklhJk+p0gAAAAAeAAAATgBvAHIAdABoAHcAaQBuAGQAIABNAEEAUgBUAAAAEGYAAAABAAAgAAAAfM6XwC/XStRJ+jyfMudY8oqtMGCGIzURvP3z/M8ceBkAAAAADoAAAAACAAAgAAAAMWvCVfCFwmpwB8sEBPxnf2utCnHEd80QFF3jOzqRqCAQAAAA3qMyoXXLnV3P07DVHTZ3C0AAAACPY8TlyPrRUUIL1P7FN+Vxc/pCfbbtAz1QmSIXtX2AvcdsXxuahYXXx5PIKn7sZ3XrsFCN+wlwH6SDq4Y1nrfz</Value>
+          </ConfigurationSetting>
+        </UserPasswords>
+        <TargetServer>localhost</TargetServer>
+        <TargetDatabase>CUBONUEVO</TargetDatabase>
+        <StartObject>
+          <ObjectId></ObjectId>
+          <ObjectType>Current</ObjectType>
+        </StartObject>
+      </Options>
+    </Configuration>
+  </Configurations>
+</AnalysisServicesUserConfiguration>
